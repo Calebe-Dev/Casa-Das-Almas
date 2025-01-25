@@ -1,0 +1,71 @@
+:root {
+    --hero-background-color: #ffffff;
+    --hero-padding: 60px 20px;
+    --hero-max-width: 1440px;
+    --hero-gap: 20px;
+    --hero-subtitle-color: #696969;
+    --hero-subtitle-font-size: 14px;
+    --hero-subtitle-letter-spacing: 3.6px;
+    --hero-title-color: #232323;
+    --hero-title-font-size: 46px;
+    --hero-description-color: #232323;
+    --hero-description-font-size: 14px;
+    --hero-description-line-height: 1.6;
+    --hero-button-background-color: #b29279;
+    --hero-button-color: #ffffff;
+    --hero-button-padding: 15px 30px;
+    --hero-button-font-size: 12px;
+    --hero-button-border-radius: 22px;
+}
+
+.hero {
+    background-color: var(--hero-background-color);
+    padding: var(--hero-padding);
+    display: flex;
+    justify-content: initial;
+    max-width: var(--hero-max-width);
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-content {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--hero-gap);
+}
+
+.hero-subtitle {
+    color: var(--hero-subtitle-color);
+    font-size: var(--hero-subtitle-font-size);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: var(--hero-subtitle-letter-spacing);
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    color: var(--hero-title-color);
+    font-size: var(--hero-title-font-size);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    color: var(--hero-description-color);
+    font-size: var(--hero-description-font-size);
+    font-family: 'Poppins', sans-serif;
+    line-height: var(--hero-description-line-height);
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: var(--hero-button-background-color);
+    color: var(--hero-button-color);
+    border: none;
+    padding: var(--hero-button-padding);
+    font-size: var(--hero-button-font-size);
+    font-family: 'Poppins', sans-serif;
+    border-radius: var(--hero-button-border-radius);
+    width: fit-content;
+    cursor: pointer;
+}

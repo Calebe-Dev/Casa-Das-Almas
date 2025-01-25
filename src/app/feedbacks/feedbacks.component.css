@@ -1,0 +1,148 @@
+:root {
+    --feedbacks-background-color: #f4f4f4;
+    --feedbacks-primary-color: #232323;
+    --feedbacks-secondary-color: #696969;
+    --feedbacks-accent-color: #b29279;
+    --feedbacks-card-background-color: #dadada;
+    --feedbacks-font-family: 'Poppins', sans-serif;
+    --feedbacks-font-size-small: 12px;
+    --feedbacks-font-size-medium: 14px;
+    --feedbacks-font-size-large: 16px;
+    --feedbacks-font-size-xlarge: 40px;
+    --feedbacks-padding-small: 10px;
+    --feedbacks-padding-medium: 20px;
+    --feedbacks-padding-large: 40px;
+    --feedbacks-border-radius: 10px;
+    --feedbacks-gap-small: 10px;
+    --feedbacks-gap-medium: 15px;
+    --feedbacks-gap-large: 20px;
+    --feedbacks-max-width-container: 1440px;
+    --feedbacks-max-width-description: 868px;
+    --feedbacks-image-size: 40px;
+    --feedbacks-arrow-size: 25px;
+}
+
+.testimonials {
+    background-color: var(--feedbacks-background-color);
+    padding: var(--feedbacks-padding-large) var(--feedbacks-padding-medium);
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-container {
+    max-width: var(--feedbacks-max-width-container);
+    padding: var(--feedbacks-padding-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-subtitle {
+    color: var(--feedbacks-secondary-color);
+    text-align: center;
+    font-size: var(--feedbacks-font-size-small);
+    font-family: var(--feedbacks-font-family);
+    letter-spacing: 3.6px;
+    margin-bottom: var(--feedbacks-gap-medium);
+}
+
+.testimonials-title {
+    color: var(--feedbacks-primary-color);
+    text-align: center;
+    font-size: var(--feedbacks-font-size-xlarge);
+    font-family: var(--feedbacks-font-family);
+    margin-bottom: var(--feedbacks-gap-medium);
+}
+
+.testimonials-description {
+    color: var(--feedbacks-primary-color);
+    text-align: center;
+    font-size: var(--feedbacks-font-size-medium);
+    font-family: var(--feedbacks-font-family);
+    line-height: 1.6;
+    margin-bottom: var(--feedbacks-gap-large);
+    max-width: var(--feedbacks-max-width-description);
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: var(--feedbacks-gap-large);
+    justify-content: center;
+    width: 100%;
+}
+
+.testimonial-card {
+    background-color: var(--feedbacks-card-background-color);
+    padding: var(--feedbacks-padding-medium);
+    border-radius: var(--feedbacks-border-radius);
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--feedbacks-gap-medium);
+}
+
+.quote {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.testimonial-text {
+    color: var(--feedbacks-primary-color);
+    font-size: var(--feedbacks-font-size-medium);
+    font-family: var(--feedbacks-font-family);
+    line-height: 1.5;
+    margin-bottom: var(--feedbacks-gap-small);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--feedbacks-gap-small);
+}
+
+.testimonial-author-image {
+    width: var(--feedbacks-image-size);
+    height: var(--feedbacks-image-size);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial-author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-author-name {
+    color: var(--feedbacks-primary-color);
+    font-size: var(--feedbacks-font-size-large);
+    font-family: var(--feedbacks-font-family);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--feedbacks-gap-medium);
+    margin-top: var(--feedbacks-gap-large);
+}
+
+.nav-button {
+    background-color: var(--feedbacks-accent-color);
+    width: var(--feedbacks-image-size);
+    height: var(--feedbacks-image-size);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.outline-arrow-small-left, .outline-arrow-small-left2 {
+    height: var(--feedbacks-arrow-size);
+    width: var(--feedbacks-arrow-size);
+}

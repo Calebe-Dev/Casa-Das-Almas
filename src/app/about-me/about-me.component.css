@@ -1,0 +1,49 @@
+:root {
+    --about-me-background-color: #f4f4f4;
+    --about-me-primary-color: #232323;
+    --about-me-title-font-size: 30px;
+    --about-me-text-font-size: 14px;
+    --about-me-padding-large: 40px;
+    --about-me-padding-medium: 20px;
+    --about-me-padding-small: 20px;
+    --about-me-margin-bottom: 30px;
+    --about-me-max-width-container: 1440px;
+    --about-me-max-width-text: 800px;
+    --about-me-line-height: 1.6;
+    --about-me-font-family: 'Poppins', sans-serif;
+    --about-me-font-weight-bold: bold;
+}
+
+.about-us {
+    background-color: var(--about-me-background-color);
+    padding: var(--about-me-padding-large) var(--about-me-padding-medium);
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-container {
+    max-width: var(--about-me-max-width-container);
+    padding: var(--about-me-padding-small);
+}
+
+.about-us-title-container {
+    margin-bottom: var(--about-me-margin-bottom);
+}
+
+.about-us-title {
+    color: var(--about-me-primary-color);
+    font-size: var(--about-me-title-font-size);
+    font-family: var(--about-me-font-family);
+    font-weight: var(--about-me-font-weight-bold);
+}
+
+.about-us-text-container {
+    max-width: var(--about-me-max-width-text);
+}
+
+.about-us-text {
+    color: var(--about-me-primary-color);
+    font-size: var(--about-me-text-font-size);
+    font-family: var(--about-me-font-family);
+    line-height: var(--about-me-line-height);
+}

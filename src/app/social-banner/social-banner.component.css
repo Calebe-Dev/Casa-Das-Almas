@@ -1,0 +1,78 @@
+:root {
+    --social-banner-background-color: #fff;
+    --social-banner-container-bg-color: #b29279;
+    --social-banner-container-max-width: 1313px;
+    --social-banner-container-padding: 15px;
+    --social-banner-container-border-radius: 40px;
+    --social-banner-container-before-bg-color: #625042;
+    --social-banner-container-before-width: 822px;
+    --social-banner-container-before-border-radius: 100px 40px 40px 100px;
+    --social-banner-item-bg-color: #b29279;
+    --social-banner-item-size: 78px;
+    --social-banner-item-border-radius: 50%;
+    --social-banner-text-color: #d9d9d9;
+    --social-banner-text-font-size: 20px;
+    --social-banner-text-font-family: 'Poppins', sans-serif;
+    --social-banner-icon-position-left: 13px;
+    --social-banner-icon-position-top: 13px;
+    --social-banner-gap: 20px;
+    --social-banner-padding: 40px 20px;
+}
+
+.social-links-banner {
+    display: flex;
+    justify-content: center;
+    padding: var(--social-banner-padding);
+    background-color: var(--social-banner-background-color);
+}
+
+.social-links-container {
+    max-width: var(--social-banner-container-max-width);
+    display: flex;
+    justify-content: center;
+    gap: var(--social-banner-gap);
+    background-color: var(--social-banner-container-bg-color);
+    padding: var(--social-banner-container-padding);
+    border-radius: var(--social-banner-container-border-radius);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--social-banner-container-before-width);
+    height: 100%;
+    background-color: var(--social-banner-container-before-bg-color);
+    border-radius: var(--social-banner-container-before-border-radius);
+}
+
+.social-link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link-bg {
+    background-color: var(--social-banner-item-bg-color);
+    height: var(--social-banner-item-size);
+    width: var(--social-banner-item-size);
+    border-radius: var(--social-banner-item-border-radius);
+}
+
+.social-link-text {
+    color: var(--social-banner-text-color);
+    font-size: var(--social-banner-text-font-size);
+    font-family: var(--social-banner-text-font-family);
+    white-space: nowrap;
+}
+
+.outline-location-1, .outline-phone, .outline-mail-banner {
+    position: absolute;
+    left: var(--social-banner-icon-position-left);
+    top: var(--social-banner-icon-position-top);
+}

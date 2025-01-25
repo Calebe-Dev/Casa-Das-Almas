@@ -1,0 +1,82 @@
+:root {
+  --products-banner-bg-color: #f4f4f4;
+  --products-banner-border-radius: 10px;
+  --products-banner-text-max-width: 300px;
+  --products-banner-heading-font-size: 24px;
+  --products-banner-heading-color: #4a3f35;
+  --products-banner-paragraph-font-size: 16px;
+  --products-banner-paragraph-color: #7a6f64;
+  --products-banner-button-bg-color: #8d6e63;
+  --products-banner-button-text-color: white;
+  --products-banner-button-padding: 10px 15px;
+  --products-banner-button-border-radius: 5px;
+  --products-banner-grid-gap: 20px;
+  --products-banner-card-bg-color: white;
+  --products-banner-card-padding: 15px;
+  --products-banner-card-border-radius: 8px;
+  --products-banner-card-img-max-width: 100px;
+  --products-banner-card-img-border-radius: 5px;
+  --products-banner-card-heading-font-size: 18px;
+  --products-banner-card-heading-margin: 10px 0;
+  --products-banner-card-paragraph-font-size: 14px;
+  --products-banner-card-paragraph-color: #555;
+}
+
+.products-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--products-banner-bg-color);
+  border-radius: var(--products-banner-border-radius);
+}
+
+.banner-text {
+  max-width: var(--products-banner-text-max-width);
+}
+
+.banner-text h2 {
+  font-size: var(--products-banner-heading-font-size);
+  color: var(--products-banner-heading-color);
+}
+
+.banner-text p {
+  font-size: var(--products-banner-paragraph-font-size);
+  color: var(--products-banner-paragraph-color);
+}
+
+button {
+  background-color: var(--products-banner-button-bg-color);
+  color: var(--products-banner-button-text-color);
+  padding: var(--products-banner-button-padding);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--products-banner-button-border-radius);
+}
+
+.products-grid {
+  display: flex;
+  gap: var(--products-banner-grid-gap);
+}
+
+.product-card {
+  background: var(--products-banner-card-bg-color);
+  padding: var(--products-banner-card-padding);
+  border-radius: var(--products-banner-card-border-radius);
+  text-align: center;
+}
+
+.product-card img {
+  max-width: var(--products-banner-card-img-max-width);
+  border-radius: var(--products-banner-card-img-border-radius);
+}
+
+.product-card h3 {
+  font-size: var(--products-banner-card-heading-font-size);
+  margin: var(--products-banner-card-heading-margin);
+}
+
+.product-card p {
+  font-size: var(--products-banner-card-paragraph-font-size);
+  color: var(--products-banner-card-paragraph-color);
+}
