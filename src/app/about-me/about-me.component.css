@@ -1,14 +1,14 @@
 :root {
     --about-me-background-color: #f4f4f4;
     --about-me-primary-color: #232323;
-    --about-me-title-font-size: 30px;
-    --about-me-text-font-size: 14px;
-    --about-me-padding-large: 40px;
-    --about-me-padding-medium: 20px;
-    --about-me-padding-small: 20px;
-    --about-me-margin-bottom: 30px;
-    --about-me-max-width-container: 1440px;
-    --about-me-max-width-text: 800px;
+    --about-me-title-font-size: 1.875rem;
+    --about-me-text-font-size: 0.875rem;
+    --about-me-padding-large: 2.5rem;
+    --about-me-padding-medium: 1.25rem;
+    --about-me-padding-small: 1.25rem;
+    --about-me-margin-bottom: 1.875rem;
+    --about-me-max-width-container: 1000px;
+    --about-me-max-width-text: 600px;
     --about-me-line-height: 1.6;
     --about-me-font-family: 'Poppins', sans-serif;
     --about-me-font-weight-bold: bold;
@@ -18,7 +18,11 @@
     background-color: var(--about-me-background-color);
     padding: var(--about-me-padding-large) var(--about-me-padding-medium);
     display: flex;
-    justify-content: center;
+    margin: 2rem;
+    justify-content: initial;
+    margin-right: 2rem;
+    min-height: 80vh;
+    border-radius: 1.25rem;
 }
 
 .about-us-container {
@@ -46,4 +50,64 @@
     font-size: var(--about-me-text-font-size);
     font-family: var(--about-me-font-family);
     line-height: var(--about-me-line-height);
+}
+
+p {
+    padding: 0.4375rem;
+}
+
+.about-us-button {
+    background-color: var(--hero-button-background-color);
+    color: var(--hero-button-color);
+    border: none;
+    padding: var(--hero-button-padding);
+    font-size: var(--hero-button-font-size);
+    font-family: 'Poppins', sans-serif;
+    border-radius: var(--hero-button-border-radius);
+    width: fit-content;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        padding: var(--about-me-padding-medium);
+        margin: 1rem;
+        margin-right: 1rem;
+    }
+
+    .about-us-title {
+        font-size: 1.5rem; 
+    }
+
+    .about-us-text {
+        font-size: 0.75rem; 
+    }
+
+    .about-us-button {
+        width: 100%;
+        padding: 0.75rem; 
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us {
+        padding: var(--about-me-padding-small);
+        margin: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .about-us-title {
+        font-size: 1.25rem; 
+    }
+
+    .about-us-text {
+        font-size: 0.625rem; 
+    }
+
+    .about-us-button {
+        padding: 0.5rem; 
+        font-size: 0.875rem; 
+    }
 }
