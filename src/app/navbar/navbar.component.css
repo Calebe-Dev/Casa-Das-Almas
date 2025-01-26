@@ -1,40 +1,36 @@
-/* Variáveis */
 :root {
     --navbar-background-color: #ffffff;
     --navbar-box-shadow-color: rgba(0, 0, 0, 0.1);
-    --navbar-header-padding: 20px 0;
-    --navbar-border-radius: 0 0 60px 60px;
-    --navbar-max-width: 1440px;
+    --navbar-header-padding: 1.25rem 0; 
+    --navbar-border-radius: 0 0 3.75rem 3.75rem;
+    --navbar-max-width: 90%; 
     --navbar-margin-auto: 0 auto;
-    --navbar-padding-horizontal: 0 20px;
-    --navbar-logo-font-size: 24px;
+    --navbar-padding-horizontal: 0 1.25rem;
+    --navbar-logo-font-size: 1.5rem;
     --navbar-logo-font-weight: bold;
     --navbar-logo-color: #232323;
     --navbar-font-family: 'Poppins', sans-serif;
-    --navbar-nav-links-gap: 30px;
-    --navbar-nav-links-font-size: 14px;
+    --navbar-nav-links-gap: 1.875rem;
+    --navbar-nav-links-font-size: 0.875rem;
     --navbar-theme-switcher-bg-color: #cfcfc7;
-    --navbar-theme-switcher-height: 45px;
-    --navbar-theme-switcher-width: 109px;
-    --navbar-theme-switcher-border-radius: 220px;
-    --navbar-theme-switcher-padding: 0px 7px;
+    --navbar-theme-switcher-height: 2.8125rem;
+    --navbar-theme-switcher-width: 6.8125rem;
+    --navbar-theme-switcher-border-radius: 13.75rem;
+    --navbar-theme-switcher-padding: 0 0.4375rem;
     --navbar-theme-switcher-bg-inner-color: #b29279;
-    --navbar-theme-switcher-bg-inner-width: 59px;
-    --navbar-theme-switcher-bg-inner-border-radius: 40px;
-    --navbar-theme-switcher-bg-inner-left: 0px;
+    --navbar-theme-switcher-bg-inner-width: 3.6875rem;
+    --navbar-theme-switcher-bg-inner-border-radius: 2.5rem;
+    --navbar-theme-switcher-bg-inner-left: 0;
     --navbar-theme-switcher-bg-inner-transition: all 0.3s ease;
-    --navbar-icon-size-sun: 32px;
-    --navbar-icon-size-moon: 31px;
-    --navbar-icon-position-left: 63px;
+    --navbar-icon-size-sun: 2rem;
+    --navbar-icon-size-moon: 1.9375rem;
+    --navbar-icon-position-left: 3.9375rem;
 }
-
 
 .header {
     background-color: var(--navbar-background-color);
     padding: var(--navbar-header-padding);
-    box-shadow: 0 2px 5px var(--navbar-box-shadow-color);
-    border-radius: var(--navbar-border-radius);
-    border: none;
+    margin-top: 1.875rem; /* 30px to rem */
 }
 
 .navbar {
@@ -71,7 +67,7 @@
 .theme-switcher {
     background-color: var(--navbar-theme-switcher-bg-color);
     height: var(--navbar-theme-switcher-height);
-    width: var(--navbar-theme-switcher-width);
+    min-width: var(--navbar-theme-switcher-width);
     border-radius: var(--navbar-theme-switcher-border-radius);
     display: flex;
     align-items: center;
@@ -103,4 +99,82 @@
     z-index: 1;
     position: absolute;
     left: var(--navbar-icon-position-left);
+}
+
+.nav-button {
+    background-color: var(--hero-button-background-color);
+    color: var(--hero-button-color);
+    border: none;
+    padding: var(--hero-button-padding);
+    font-size: var(--hero-button-font-size);
+    font-family: 'Poppins', sans-serif;
+    border-radius: var(--hero-button-border-radius);
+    min-width: fit-content;
+    cursor: pointer;
+    height: var(--navbar-theme-switcher-height);
+    margin-right: 3rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: row;
+    margin-right: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    .logo {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 0.625rem; /* 10px */
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+
+    .theme-switcher {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .theme-switcher-bg {
+        width: 2.5rem;
+        height: 2rem;
+    }
+
+    .outline-sun, .outline-moon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .outline-moon {
+        left: 2.5rem;
+    }
 }

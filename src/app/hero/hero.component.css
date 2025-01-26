@@ -1,21 +1,21 @@
 :root {
     --hero-background-color: #ffffff;
-    --hero-padding: 60px 20px;
-    --hero-max-width: 1440px;
-    --hero-gap: 20px;
+    --hero-padding: 3.75rem 1.25rem; /* 60px 20px */
+    --hero-max-width: 90rem; /* 1440px */
+    --hero-gap: 1.25rem; /* 20px */
     --hero-subtitle-color: #696969;
-    --hero-subtitle-font-size: 14px;
-    --hero-subtitle-letter-spacing: 3.6px;
+    --hero-subtitle-font-size: 0.875rem; /* 14px */
+    --hero-subtitle-letter-spacing: 0.225rem; /* 3.6px */
     --hero-title-color: #232323;
-    --hero-title-font-size: 46px;
+    --hero-title-font-size: 2.875rem; /* 46px */
     --hero-description-color: #232323;
-    --hero-description-font-size: 14px;
+    --hero-description-font-size: 0.875rem; /* 14px */
     --hero-description-line-height: 1.6;
     --hero-button-background-color: #b29279;
     --hero-button-color: #ffffff;
-    --hero-button-padding: 15px 30px;
-    --hero-button-font-size: 12px;
-    --hero-button-border-radius: 22px;
+    --hero-button-padding: 0.9375rem 1.875rem; /* 15px 30px */
+    --hero-button-font-size: 0.75rem; /* 12px */
+    --hero-button-border-radius: 1.375rem; /* 22px */
 }
 
 .hero {
@@ -25,11 +25,12 @@
     justify-content: initial;
     max-width: var(--hero-max-width);
     margin: 0 auto;
+    margin-left: 2rem;
     position: relative;
 }
 
 .hero-content {
-    width: 580px;
+    width: 36.25rem; /* 580px */
     display: flex;
     flex-direction: column;
     gap: var(--hero-gap);
@@ -40,14 +41,14 @@
     font-size: var(--hero-subtitle-font-size);
     font-family: 'Poppins', sans-serif;
     letter-spacing: var(--hero-subtitle-letter-spacing);
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px */
 }
 
 .hero-title {
     color: var(--hero-title-color);
     font-size: var(--hero-title-font-size);
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px */
 }
 
 .hero-description {
@@ -55,7 +56,7 @@
     font-size: var(--hero-description-font-size);
     font-family: 'Poppins', sans-serif;
     line-height: var(--hero-description-line-height);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .hero-button {

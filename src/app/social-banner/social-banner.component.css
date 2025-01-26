@@ -1,22 +1,22 @@
 :root {
     --social-banner-background-color: #fff;
     --social-banner-container-bg-color: #b29279;
-    --social-banner-container-max-width: 1313px;
-    --social-banner-container-padding: 15px;
-    --social-banner-container-border-radius: 40px;
+    --social-banner-container-min-width: 60rem;
+    --social-banner-container-padding: 0.9375rem;
+    --social-banner-container-border-radius: 1.5rem;
     --social-banner-container-before-bg-color: #625042;
-    --social-banner-container-before-width: 822px;
-    --social-banner-container-before-border-radius: 100px 40px 40px 100px;
+    --social-banner-container-before-width: 51.375rem;
+    --social-banner-container-before-border-radius: 6.25rem 2.5rem 2.5rem 6.25rem;
     --social-banner-item-bg-color: #b29279;
-    --social-banner-item-size: 78px;
+    --social-banner-item-size: 4.875rem;
     --social-banner-item-border-radius: 50%;
     --social-banner-text-color: #d9d9d9;
-    --social-banner-text-font-size: 20px;
+    --social-banner-text-font-size: 1.25rem;
     --social-banner-text-font-family: 'Poppins', sans-serif;
-    --social-banner-icon-position-left: 13px;
-    --social-banner-icon-position-top: 13px;
-    --social-banner-gap: 20px;
-    --social-banner-padding: 40px 20px;
+    --social-banner-icon-position-left: 0.8125rem;
+    --social-banner-icon-position-top: 1.25rem;
+    --social-banner-gap: 1.25rem;
+    --social-banner-padding: 2.5rem 1.25rem;
 }
 
 .social-links-banner {
@@ -27,9 +27,10 @@
 }
 
 .social-links-container {
-    max-width: var(--social-banner-container-max-width);
+    min-width: var(--social-banner-container-min-width);
+    min-height: 6rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: var(--social-banner-gap);
     background-color: var(--social-banner-container-bg-color);
     padding: var(--social-banner-container-padding);
@@ -42,17 +43,18 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20rem;
     width: var(--social-banner-container-before-width);
     height: 100%;
     background-color: var(--social-banner-container-before-bg-color);
     border-radius: var(--social-banner-container-before-border-radius);
+    max-width: 70%;
 }
 
 .social-link-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     position: relative;
     z-index: 1;
 }
@@ -69,10 +71,55 @@
     font-size: var(--social-banner-text-font-size);
     font-family: var(--social-banner-text-font-family);
     white-space: nowrap;
+    padding: 1rem;
 }
 
-.outline-location-1, .outline-phone, .outline-mail-banner {
+.outline-phone, .outline-mail-banner {
     position: absolute;
     left: var(--social-banner-icon-position-left);
     top: var(--social-banner-icon-position-top);
+}
+
+.outline-location-1 {
+    background-color: #625042;
+    border-radius: 100%;
+    padding:1.25rem;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0.40rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    :root {
+        --social-banner-container-min-width: 100%;
+        --social-banner-container-padding: 0.5rem;
+        --social-banner-container-before-width: 100%;
+        --social-banner-item-size: 3rem;
+        --social-banner-text-font-size: 1rem;
+        --social-banner-icon-position-left: 0.5rem;
+        --social-banner-icon-position-top: 0.5rem;
+        --social-banner-gap: 0.5rem;
+        --social-banner-padding: 1rem 0.5rem;
+    }
+
+    .social-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links-container::before {
+        left: 0;
+        border-radius: 0;
+    }
+
+    .social-link-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-link-text {
+        padding: 0.5rem;
+    }
 }
